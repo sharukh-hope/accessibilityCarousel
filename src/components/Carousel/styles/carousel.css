@@ -1,0 +1,78 @@
+.CarouselWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidesWrapper {
+  width: 100%;
+  max-width: 516px;
+  min-width: 380px;
+}
+.react-slideshow-container .nav:first-of-type {
+  left: 16px;
+}
+.react-slideshow-container .nav:last-of-type {
+  right: 16px;
+}
+.react-slideshow-wrapper .active > .each-slide-effect > img {
+  box-shadow: 0 0 0 2px rgba(173, 216, 230, 0.9); /* lightblue outline */
+  transition: 0.25s;
+}
+
+.react-slideshow-wrapper .images-wrap.horizontal {
+  flex-wrap: nowrap;
+}
+
+.images-wrap.horizontal > div {
+  padding: 8px;
+}
+.each-slide-effect > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  height: 350px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+.arrowButton {
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 32px;
+}
+
+.left {
+  background-image: url("../../../assets/arrow-left.svg");
+}
+
+.right {
+  background-image: url("../../../assets/arrow-right.svg");
+}
+
+.autoplayButton {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 32px;
+  transition: 0.5s;
+}
+.playIcon {
+  background-image: url("../../../assets/play.svg");
+}
+.pauseIcon {
+  background-image: url("../../../assets/pause.svg");
+}
